@@ -1,0 +1,144 @@
+/* Syntra Studio – Tech Luxe Style */
+
+:root {
+  --navy: #171A80;
+  --silver: #C9CCD5;
+  --teal: #4FB9B8;
+  --cobalt: #3F59F5;
+  --white: #F7F8FA;
+  --gray: #40434F;
+}
+
+/* GLOBAL STYLES */
+body {
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--gray);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: var(--navy);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--cobalt);
+}
+
+/* LAYOUT */
+section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  border-bottom: 2px solid var(--teal);
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-top: 32px;
+}
+
+/* ABOUT */
+#about p {
+  margin-bottom: 18px;
+}
+
+/* SERVICES */
+#services .service {
+  background-color: var(--white);
+  border: 1px solid rgba(64, 67, 79, 0.1);
+  border-left: 4px solid var(--teal);
+  padding: 24px;
+  margin-bottom: 28px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+}
+
+#services ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: var(--gray);
+}
+
+/* PORTFOLIO */
+#portfolio ul {
+  list-style-type: square;
+  margin-left: 24px;
+}
+
+/* TESTIMONIALS */
+#testimonials blockquote {
+  background: var(--navy);
+  color: var(--white);
+  border-left: 5px solid var(--teal);
+  padding: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  border-radius: 8px;
+}
+
+#testimonials footer {
+  text-align: right;
+  font-weight: 500;
+  color: var(--silver);
+  margin-top: 10px;
+}
+
+/* CONTACT */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#contact button {
+  background: var(--cobalt);
+  color: var(--white);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+#contact button:hover {
+  background: var(--teal);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--silver);
+  font-size: 0.9rem;
+  background-color: var(--navy);
+}
